@@ -9,7 +9,10 @@ const databaseConnect = require("./config/dbConfige");
 //middleware
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: [
+      "http://localhost:5173",
+      "https://simple-design-reshma-khanam.netlify.app",
+    ],
   })
 );
 app.use(express.json());
